@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Intelligent Legal Document Retrieval & Case Summarization — RAG-powered system for context-aware legal document search across 1,000+ PDFs.">
+  <meta name="theme-color" content="#0a0a0a">
+  <title>Deepak TP — Intelligent Legal Document Retrieval & Case Summarization</title>
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<div class="noise-overlay"></div>
+
+<!-- Top Navigation -->
+<nav class="nav-bar">
+  <div class="nav-bar__inner">
+    <a href="../index.html" class="nav-bar__logo">
+      <span class="nav-bar__logo-dot"></span> Deepak
+    </a>
+    <div class="nav-bar__links">
+      <a href="../index.html"><span class="nav-icon">⊙</span> Profile</a>
+      <a href="../projects.html" class="active"><span class="nav-icon">◧</span> Projects</a>
+      <a href="../github.html"><span class="nav-icon">⌥</span> GitHub</a>
+      <a href="../research.html"><span class="nav-icon">◈</span> Research</a>
+      <a href="../resume.html"><span class="nav-icon">▤</span> Resume</a>
+      <a href="../working.html"><span class="nav-icon">⟐</span> Working</a>
+      <a href="../contact.html"><span class="nav-icon">✉</span> Contact</a>
+    </div>
+    <button class="theme-toggle" aria-label="Toggle theme">
+      <span class="icon-sun">☀</span><span class="icon-moon">☾</span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Bottom Navigation -->
+<nav class="mobile-nav">
+  <a href="../index.html"><span class="nav-icon">⊙</span><span>Profile</span></a>
+  <a href="../projects.html" class="active"><span class="nav-icon">◧</span><span>Projects</span></a>
+  <a href="../github.html"><span class="nav-icon">⌥</span><span>GitHub</span></a>
+  <a href="../research.html"><span class="nav-icon">◈</span><span>Research</span></a>
+  <a href="../resume.html"><span class="nav-icon">▤</span><span>Resume</span></a>
+  <a href="../working.html"><span class="nav-icon">⟐</span><span>Working</span></a>
+  <a href="../contact.html"><span class="nav-icon">✉</span><span>Contact</span></a>
+</nav>
+
+<!-- Page Body -->
+<div class="page-body">
+  <div class="container">
+
+    <a href="../projects.html" class="project-detail__back">← Back to Projects</a>
+
+    <h1 class="project-detail__title">Intelligent Legal Document Retrieval & Case Summarization</h1>
+    <p class="project-detail__meta">
+      <span class="tag">Python</span>
+      <span class="tag">RAG</span>
+      <span class="tag">NLP</span>
+      <span class="tag">LLM</span>
+      <span class="tag">Vector Embeddings</span>
+      <span class="tag">Transformers</span>
+    </p>
+
+    <div class="project-detail__body">
+
+      <h2>Overview</h2>
+      <p>
+        Designed and implemented an intelligent legal document retrieval and case summarization
+        system using Retrieval-Augmented Generation (RAG). The system enables context-aware
+        responses across a corpus of 1,000+ legal PDF documents, making it possible for legal
+        professionals to quickly find relevant case law, statutes, and precedents through
+        natural language queries.
+      </p>
+
+      <h2>System Architecture</h2>
+
+      <h3>Document Ingestion Pipeline</h3>
+      <p>
+        Built a robust PDF processing pipeline capable of ingesting and parsing 1,000+ legal
+        documents. The pipeline handles diverse document formats, extracts structured text,
+        and segments content into semantically meaningful chunks optimized for retrieval accuracy.
+      </p>
+
+      <h3>Semantic Search Engine</h3>
+      <p>
+        Implemented semantic search using vector embeddings to move beyond simple keyword matching.
+        Documents are encoded into dense vector representations, enabling the system to understand
+        the meaning and context of legal queries and retrieve the most relevant passages even
+        when exact terms don't match.
+      </p>
+
+      <h3>LLM Integration & RAG</h3>
+      <p>
+        Integrated Large Language Models with the retrieval system to generate accurate,
+        context-grounded case summaries. The RAG architecture ensures that LLM responses are
+        anchored in actual legal documents, minimizing hallucinations and providing traceable
+        citations back to source material.
+      </p>
+
+      <h2>Key Features</h2>
+      <ul>
+        <li>Context-aware search and retrieval across 1,000+ legal PDFs</li>
+        <li>Semantic search with vector embeddings for meaning-based document matching</li>
+        <li>Automatic case summarization powered by LLM integration</li>
+        <li>Domain-specific query enhancement for legal terminology</li>
+        <li>RAG pipeline ensuring factually grounded, citation-backed responses</li>
+        <li>Scalable architecture designed for growing document corpora</li>
+      </ul>
+
+      <h2>Technical Stack</h2>
+      <ul>
+        <li><strong>Language:</strong> Python</li>
+        <li><strong>NLP & Embeddings:</strong> Transformer models, Sentence Transformers</li>
+        <li><strong>Vector Database:</strong> FAISS / Vector Store for similarity search</li>
+        <li><strong>LLM Framework:</strong> LangChain for RAG orchestration</li>
+        <li><strong>Document Processing:</strong> PDF parsing and text extraction pipeline</li>
+      </ul>
+
+      <h2>Skills Gained</h2>
+      <p>
+        This project provided extensive hands-on experience in NLP, Transformer models,
+        vector embedding techniques, RAG system design, and domain-specific query enhancement
+        for the legal domain. It deepened understanding of how to build production-grade
+        AI systems that combine retrieval and generation for real-world applications.
+      </p>
+
+    </div>
+
+    <footer class="site-footer">
+      &copy; 2025 Deepak TP. All rights reserved.
+    </footer>
+
+  </div>
+</div>
+
+<script src="../config.js"></script>
+<script src="../assets/js/app.js"></script>
+</body>
+</html>

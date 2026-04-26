@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Transformer-Based Time Series Classification — Patient disease classification using Transformer models on minute-level temperature data.">
+  <meta name="theme-color" content="#0a0a0a">
+  <title>Deepak TP — Transformer-Based Time Series Classification</title>
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<div class="noise-overlay"></div>
+
+<!-- Top Navigation -->
+<nav class="nav-bar">
+  <div class="nav-bar__inner">
+    <a href="../index.html" class="nav-bar__logo">
+      <span class="nav-bar__logo-dot"></span> Deepak
+    </a>
+    <div class="nav-bar__links">
+      <a href="../index.html"><span class="nav-icon">⊙</span> Profile</a>
+      <a href="../projects.html" class="active"><span class="nav-icon">◧</span> Projects</a>
+      <a href="../github.html"><span class="nav-icon">⌥</span> GitHub</a>
+      <a href="../research.html"><span class="nav-icon">◈</span> Research</a>
+      <a href="../resume.html"><span class="nav-icon">▤</span> Resume</a>
+      <a href="../working.html"><span class="nav-icon">⟐</span> Working</a>
+      <a href="../contact.html"><span class="nav-icon">✉</span> Contact</a>
+    </div>
+    <button class="theme-toggle" aria-label="Toggle theme">
+      <span class="icon-sun">☀</span><span class="icon-moon">☾</span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Bottom Navigation -->
+<nav class="mobile-nav">
+  <a href="../index.html"><span class="nav-icon">⊙</span><span>Profile</span></a>
+  <a href="../projects.html" class="active"><span class="nav-icon">◧</span><span>Projects</span></a>
+  <a href="../github.html"><span class="nav-icon">⌥</span><span>GitHub</span></a>
+  <a href="../research.html"><span class="nav-icon">◈</span><span>Research</span></a>
+  <a href="../resume.html"><span class="nav-icon">▤</span><span>Resume</span></a>
+  <a href="../working.html"><span class="nav-icon">⟐</span><span>Working</span></a>
+  <a href="../contact.html"><span class="nav-icon">✉</span><span>Contact</span></a>
+</nav>
+
+<!-- Page Body -->
+<div class="page-body">
+  <div class="container">
+
+    <a href="../projects.html" class="project-detail__back">← Back to Projects</a>
+
+    <h1 class="project-detail__title">Transformer-Based Time Series Classification</h1>
+    <p class="project-detail__meta">
+      <span class="tag">Python</span>
+      <span class="tag">PyTorch</span>
+      <span class="tag">Transformers</span>
+      <span class="tag">Time Series</span>
+      <span class="tag">FFT</span>
+      <span class="tag">Deep Learning</span>
+    </p>
+
+    <div class="project-detail__body">
+
+      <h2>Overview</h2>
+      <p>
+        Developed a Transformer-based supervised learning model for patient disease classification
+        using time-series temperature data. The dataset comprises 1,440 minute-level observations
+        recorded over a 24-hour period, capturing granular physiological patterns that are
+        indicative of various disease states.
+      </p>
+
+      <h2>Methodology</h2>
+
+      <h3>Exploratory Data Analysis (EDA)</h3>
+      <p>
+        Performed extensive exploratory data analysis using statistical techniques and informative
+        visualizations to understand the underlying structure of the temperature time-series data.
+        This phase was critical in uncovering temporal patterns, identifying anomalies, and
+        informing feature engineering decisions.
+      </p>
+
+      <h3>Frequency Domain Analysis</h3>
+      <p>
+        Applied Fast Fourier Transform (FFT)–based frequency domain analysis to decompose the
+        time-series signals into their constituent frequency components. This enabled the
+        identification of periodic patterns and dominant frequencies that correlate with specific
+        disease conditions, significantly improving feature understanding and downstream model performance.
+      </p>
+
+      <h3>Transformer Architecture</h3>
+      <p>
+        Designed and implemented a Transformer-based architecture tailored for sequential
+        time-series classification. The model leverages self-attention mechanisms to capture
+        long-range temporal dependencies across the 1,440 time steps, outperforming traditional
+        RNN/LSTM baselines in both accuracy and training efficiency.
+      </p>
+
+      <h2>Key Features</h2>
+      <ul>
+        <li>Supervised classification of patient diseases from minute-level temperature readings</li>
+        <li>Comprehensive EDA with statistical analysis and rich visualizations</li>
+        <li>FFT-based frequency domain feature extraction for temporal pattern discovery</li>
+        <li>Custom Transformer encoder architecture optimized for time-series inputs</li>
+        <li>End-to-end pipeline from raw data processing to model evaluation</li>
+      </ul>
+
+      <h2>Technical Stack</h2>
+      <ul>
+        <li><strong>Language:</strong> Python</li>
+        <li><strong>Deep Learning:</strong> PyTorch, Transformer architecture</li>
+        <li><strong>Data Analysis:</strong> Pandas, NumPy, SciPy (FFT)</li>
+        <li><strong>Visualization:</strong> Matplotlib, Seaborn</li>
+      </ul>
+
+      <h2>Results</h2>
+      <p>
+        The Transformer model successfully captured complex temporal dependencies in the
+        temperature data, enabling accurate multi-class disease classification. The FFT-based
+        feature engineering provided complementary frequency-domain insights that improved
+        model performance over purely time-domain approaches.
+      </p>
+
+    </div>
+
+    <footer class="site-footer">
+      &copy; 2025 Deepak TP. All rights reserved.
+    </footer>
+
+  </div>
+</div>
+
+<script src="../config.js"></script>
+<script src="../assets/js/app.js"></script>
+</body>
+</html>

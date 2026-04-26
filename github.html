@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Deepak's GitHub contributions and open source activity.">
+  <meta name="theme-color" content="#0a0a0a">
+  <title>Deepak — GitHub</title>
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="noise-overlay"></div>
+
+<!-- Top Navigation -->
+<nav class="nav-bar">
+  <div class="nav-bar__inner">
+    <a href="index.html" class="nav-bar__logo">
+      <span class="nav-bar__logo-dot"></span> Deepak
+    </a>
+    <div class="nav-bar__links">
+      <a href="index.html"><span class="nav-icon">⊙</span> Profile</a>
+      <a href="projects.html"><span class="nav-icon">◧</span> Projects</a>
+      <a href="github.html" class="active"><span class="nav-icon">⌥</span> GitHub</a>
+      <a href="research.html"><span class="nav-icon">◈</span> Research</a>
+      <a href="resume.html"><span class="nav-icon">▤</span> Resume</a>
+      <a href="working.html"><span class="nav-icon">⟐</span> Working</a>
+      <a href="contact.html"><span class="nav-icon">✉</span> Contact</a>
+    </div>
+    <button class="theme-toggle" aria-label="Toggle theme">
+      <span class="icon-sun">☀</span><span class="icon-moon">☾</span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Bottom Navigation -->
+<nav class="mobile-nav">
+  <a href="index.html"><span class="nav-icon">⊙</span><span>Profile</span></a>
+  <a href="projects.html"><span class="nav-icon">◧</span><span>Projects</span></a>
+  <a href="github.html" class="active"><span class="nav-icon">⌥</span><span>GitHub</span></a>
+  <a href="research.html"><span class="nav-icon">◈</span><span>Research</span></a>
+  <a href="resume.html"><span class="nav-icon">▤</span><span>Resume</span></a>
+  <a href="working.html"><span class="nav-icon">⟐</span><span>Working</span></a>
+  <a href="contact.html"><span class="nav-icon">✉</span><span>Contact</span></a>
+</nav>
+
+<!-- Page Body -->
+<div class="page-body">
+  <div class="container">
+
+    <h1 class="page-title">GitHub</h1>
+
+    <!-- Empty State (shown when github.enabled = false) -->
+    <div id="githubEmpty">
+      <div class="widget widget-reveal">
+        <div class="widget__header">Contributions</div>
+        <div class="scanline-box">
+          <div class="empty-state">
+            <div class="empty-state__icon">⌥</div>
+            <div class="empty-state__title">Coming Soon</div>
+            <div class="empty-state__desc">
+              GitHub contribution graph and<br>
+              open source activity will appear here.<br><br>
+              <span style="color: var(--text-muted); font-family: var(--font-dot); font-size: 11px; letter-spacing: 1px;">
+                // initializing...
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="widget widget-reveal">
+        <div class="widget__header">Repositories</div>
+        <div class="scanline-box">
+          <div class="empty-state">
+            <div class="empty-state__icon">◧</div>
+            <div class="empty-state__title">No Data Yet</div>
+            <div class="empty-state__desc">
+              Repository stats and pinned repos<br>
+              will be displayed here once available.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Real Content (shown when github.enabled = true) — populated from config.js -->
+    <div id="githubContent" style="display: none;">
+      <div class="widget widget-reveal" id="githubProfile">
+        <div class="widget__header">Profile</div>
+        <div style="display: flex; align-items: center; gap: var(--space-lg); flex-wrap: wrap;">
+          <a href="#" id="githubProfileLink" target="_blank" class="github-username-link">
+            @<span id="githubUsername"></span>
+          </a>
+          <a href="#" id="githubViewProfile" target="_blank" class="paper-card__link">
+            ↗ View on GitHub
+          </a>
+        </div>
+      </div>
+      <div class="widget widget-reveal" id="githubStatsWidget">
+        <div class="widget__header">Stats</div>
+        <div class="github-stats-grid" id="githubStats"></div>
+      </div>
+      <div class="widget widget-reveal" id="githubReposWidget">
+        <div class="widget__header">Pinned Repositories</div>
+        <div class="github-repos-grid" id="githubRepos"></div>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      &copy; 2025 Deepak. All rights reserved.
+    </footer>
+
+  </div>
+</div>
+
+<script src="config.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <meta name="description" content="Deepak's resume — view and download PDF.">
+  <meta name="description" content="Deepak's projects — Developer portfolio showcasing engineering and research projects.">
   <meta name="theme-color" content="#0a0a0a">
-  <title>Deepak — Resume</title>
+  <title>Deepak — Projects</title>
   <link rel="icon" type="image/png" href="assets/img/favicon.png">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -21,10 +21,10 @@
     </a>
     <div class="nav-bar__links">
       <a href="index.html"><span class="nav-icon">⊙</span> Profile</a>
-      <a href="projects.html"><span class="nav-icon">◧</span> Projects</a>
+      <a href="projects.html" class="active"><span class="nav-icon">◧</span> Projects</a>
       <a href="github.html"><span class="nav-icon">⌥</span> GitHub</a>
       <a href="research.html"><span class="nav-icon">◈</span> Research</a>
-      <a href="resume.html" class="active"><span class="nav-icon">▤</span> Resume</a>
+      <a href="resume.html"><span class="nav-icon">▤</span> Resume</a>
       <a href="working.html"><span class="nav-icon">⟐</span> Working</a>
       <a href="contact.html"><span class="nav-icon">✉</span> Contact</a>
     </div>
@@ -37,10 +37,10 @@
 <!-- Mobile Bottom Navigation -->
 <nav class="mobile-nav">
   <a href="index.html"><span class="nav-icon">⊙</span><span>Profile</span></a>
-  <a href="projects.html"><span class="nav-icon">◧</span><span>Projects</span></a>
+  <a href="projects.html" class="active"><span class="nav-icon">◧</span><span>Projects</span></a>
   <a href="github.html"><span class="nav-icon">⌥</span><span>GitHub</span></a>
   <a href="research.html"><span class="nav-icon">◈</span><span>Research</span></a>
-  <a href="resume.html" class="active"><span class="nav-icon">▤</span><span>Resume</span></a>
+  <a href="resume.html"><span class="nav-icon">▤</span><span>Resume</span></a>
   <a href="working.html"><span class="nav-icon">⟐</span><span>Working</span></a>
   <a href="contact.html"><span class="nav-icon">✉</span><span>Contact</span></a>
 </nav>
@@ -49,20 +49,10 @@
 <div class="page-body">
   <div class="container">
 
-    <h1 class="page-title">Resume</h1>
+    <h1 class="page-title">Projects</h1>
 
-    <!-- PDF path loaded from config.js -->
-    <div class="widget widget-reveal">
-      <div class="widget__header">Document Preview</div>
-      <div class="pdf-viewer">
-        <iframe id="resumePdf" src="" title="Resume PDF Preview"></iframe>
-      </div>
-      <div style="text-align: center;">
-        <a href="#" download class="download-btn" id="resumeDownload">
-          ↓ Download PDF
-        </a>
-      </div>
-    </div>
+    <!-- Populated from config.js -->
+    <div class="projects-grid" id="projectsList"></div>
 
     <footer class="site-footer">
       &copy; 2025 Deepak. All rights reserved.
