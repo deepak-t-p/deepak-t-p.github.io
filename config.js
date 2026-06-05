@@ -185,7 +185,7 @@ const siteConfig = {
 
   // ── Resume ──
   resume: {
-    pdfPath: "deepak_resume_04_2026.pdf"
+    pdfPath: "deepak_resume_06_2026.pdf"
   },
 
   // ── Contact ──
