@@ -56,6 +56,13 @@ const siteConfig = {
       company: "National Technical Research Organisation (NTRO)",
       description: "Engineered an offline RAG system for technical document summarization using Docling-based extraction, hybrid retrieval (BM25 + dense embeddings), and FAISS, improving contextual grounding and reducing LLM hallucinations. Optimized LLM inference with vLLM (paged attention) for low-latency, high-throughput offline deployment. Operated within air-gapped systems, strengthening understanding of secure infrastructure and system-level constraints.",
       tags: ["Python", "RAG", "LLM", "vLLM", "FAISS", "LangChain", "Hugging Face", "NLP"]
+    },
+    {
+      period: "May 2026 — Present",
+      role: "Research Intern",
+      company: "Indian Institute of Information Technology, Sri City",
+      description: "Working on AI Agents Integration for AR/VR systems and 3D reconstruction, Temple Architecture",
+      tags: ["Python", "RAG", "LLM", "vLLM", "FAISS", "LangChain", "Hugging Face", "NLP", "LangGraph", "Docker", "AR Glass Integration"]
     }
   ],
 
